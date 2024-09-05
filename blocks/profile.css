@@ -40,8 +40,7 @@
 }
 
 .profile__title {
-  font-family: "Inter,Asrial, Halvetica, sans-serif";
-  /* font-size: 42px;*/
+  font-size: 42px;
   line-height: 48px;
   font-weight: 500;
   grid-area: title;
@@ -55,7 +54,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  font-family: Inter, Asrial, Halvetica, sans-serif;
   max-width: 373px;
   grid-area: description;
   margin: 0;
