@@ -11,6 +11,7 @@
     "title button"
     "description description";
   align-items: center;
+  gap: 16px;
 }
 
 .profile__edit-button {
@@ -27,7 +28,8 @@
 }
 
 .profile__add-button {
-  background: transparent url(../images/Add\ Button.svg) center no-repeat;
+  background: transparent url(../images/Add\ Button\ telephon.svg) center
+    no-repeat;
   height: 50px;
   width: 150px;
   margin-left: auto;
@@ -46,6 +48,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  justify-content: flex-end;
 }
 
 .profile__description {
@@ -72,6 +75,7 @@
 @media screen and (max-width: 480px) {
   .profile {
     flex-direction: column;
+    align-items: center;
   }
 
   .profile__info {
@@ -102,11 +106,27 @@
 
 @media screen and (max-width: 320px) {
   .profile__info {
-    display: block;
+    display: grid;
     text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .profile__edit-button {
+    margin-top: 10px;
+    margin-left: 0;
   }
 
   .profile__title {
     max-width: 80%;
+    margin-bottom: 14px;
+    flex-direction: column;
+  }
+
+  .profile__image {
+    margin-bottom: 30px;
+  }
+
+  .profile__description {
+    margin-bottom: 36px;
   }
 }

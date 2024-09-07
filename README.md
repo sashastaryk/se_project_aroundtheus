@@ -8,7 +8,7 @@ The Project Name - Se_Project_Aroundtheus
 
 Description : The project "Around The U.S." is a web application that displays a collection of beautiful locations in the United States. Users can view a list of cards showcasing various scenic places, each with an image and description. The project features a responsive design, ensuring a smooth experience across different devices like desktops, tablets, and mobile phones. Users can also interact with the cards by liking them. The layout is built using CSS Grid and Flexbox for efficient positioning and adaptability.
 
-GitHub:https://github.com/sashastaryk/se_project_aroundtheus.git
+GitHub: https://sashastaryk.github.io/se_project_aroundtheus/
 
 - Intro
 - Figma
