@@ -10,6 +10,7 @@
   grid-template-areas:
     "title button"
     "description description";
+  align-items: center;
 }
 
 .profile__edit-button {
@@ -96,5 +97,16 @@
     font-size: 22px;
     line-height: 26.63px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__info {
+    display: block;
+    text-align: center;
+  }
+
+  .profile__title {
+    max-width: 80%;
   }
 }
