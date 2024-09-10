@@ -10,6 +10,7 @@
   grid-template-areas:
     "title button"
     "description description";
+  grid-template-columns: minmax(auto, 373px) auto;
   align-items: center;
   gap: 16px;
 }
@@ -21,6 +22,8 @@
   grid-area: button;
   border: 1px solid rgba(255, 255, 255, 0);
   cursor: pointer;
+  justify-self: end;
+  transition: opacity 0.3s ease;
 }
 
 .profile__edit-button:hover {
@@ -28,18 +31,23 @@
 }
 
 .profile__add-button {
-  background: transparent url(../images/Add\ Button\ telephon.svg) center
-    no-repeat;
+  background: transparent url(../images/Vector-add.svg) center no-repeat;
   height: 50px;
   width: 150px;
   margin-left: auto;
   border: 2px solid rgba(255, 255, 255, 1);
   cursor: pointer;
   border-radius: 2px;
+  bottom: 36px;
+}
+
+.profile__add-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .profile__title {
-  font-size: 42px;
+  /* font-size: 40px;*/
   line-height: 48px;
   font-weight: 500;
   grid-area: title;
@@ -48,7 +56,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  justify-content: flex-end;
 }
 
 .profile__description {
@@ -83,6 +90,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    grid-template-columns: 1fr;
   }
 
   .profile__description {
@@ -91,6 +99,10 @@
     font-size: 14px;
     line-height: 16.94px;
     text-align: center;
+  }
+
+  .profile__edit-button {
+    justify-self: center;
   }
 
   .profile__add-button {
@@ -111,15 +123,11 @@
     flex-direction: column-reverse;
   }
 
-  .profile__edit-button {
-    margin-top: 10px;
-    margin-left: 0;
-  }
-
   .profile__title {
-    max-width: 80%;
-    margin-bottom: 14px;
     flex-direction: column;
+    font-size: 22px;
+    line-height: 26.63px;
+    margin-top: 30px;
   }
 
   .profile__image {
@@ -128,5 +136,6 @@
 
   .profile__description {
     margin-bottom: 36px;
+    margin-top: 14px;
   }
 }

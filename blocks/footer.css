@@ -1,5 +1,4 @@
 .footer {
-  width: 282px;
   padding: 18px 0 0;
   color: #545454;
 }
@@ -15,9 +14,7 @@
 @media screen and (max-width: 480px) {
   .footer__text {
     font-size: 14px;
-    font-weight: 400;
     line-height: 16.94px;
     text-align: left;
-    top: 113px;
   }
 }
