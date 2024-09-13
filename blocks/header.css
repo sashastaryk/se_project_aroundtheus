@@ -5,9 +5,10 @@
 }
 
 .header__logo {
-  height: auto;
+  height: 33px;
+  width: 173px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 41px;
 }
 
 @media screen and (max-width: 480px) {
