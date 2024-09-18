@@ -176,25 +176,17 @@
 
   .profile__add-button {
     margin: 0;
-
     width: 100%;
-
     margin-top: 12px;
   }
 
   .profile__title {
     font-size: 22px;
-
     line-height: 26.63px;
-
     text-align: center;
-
     padding: 0;
-
     margin: 0;
-
     margin-top: 8px;
-
     max-width: 90%;
   }
 }
@@ -202,31 +194,21 @@
 @media screen and (max-width: 320px) {
   .profile {
     flex-direction: column;
-
     align-items: center;
-  }
-
-  .profile__image {
-    margin-bottom: 16px;
   }
 
   .profile__info {
     text-align: center;
-
     margin-bottom: 16px;
   }
 
   .profile__title {
     font-size: 22px;
-
     line-height: 26px;
-
     margin-top: 16px;
   }
 
   .profile__description {
     margin-top: 10px;
-
-    margin-bottom: 20px;
   }
 }
