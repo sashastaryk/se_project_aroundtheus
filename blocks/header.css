@@ -7,17 +7,18 @@
   max-width: 880px;
   width: 100%;
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto;*/
+  margin: 0; /* Убираем все внешние отступы */
+  padding: 0 20px; /* Оставляем padding для мобильных устройств */
 }
 
 .header__logo {
   height: 33px;
-
   width: 173px;
-
   margin: 0 auto;
-
+  margin-top: 45px;
   margin-bottom: 41px;
+  margin-left: 2%;
 }
 
 @media screen and (max-width: 1100px) {
