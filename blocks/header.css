@@ -25,6 +25,7 @@
     padding-left: 27px;
     padding-right: 167px;
     max-width: 100%;
+    padding-bottom: 0;
   }
 
   .header__logo {
