@@ -1,7 +1,7 @@
 .footer {
   padding: 18px 0 0;
   color: #545454;
-  padding: 0 10px;
+  margin-top: 30px;
 }
 
 .footer__text {
@@ -17,6 +17,11 @@
   .footer__text {
     font-size: 14px;
     line-height: 16.94px;
-    text-align: left;
+    /* text-align: left;*/
+  }
+
+  .footer {
+    padding-bottom: 36px;
+    left: 19px;
   }
 }
