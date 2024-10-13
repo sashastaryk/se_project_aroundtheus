@@ -7,7 +7,7 @@
 
 .page__section {
   max-width: 880px;
-  width: 100%;
+  width: 95%;
   position: relative;
   margin: 0 auto;
 }
@@ -17,5 +17,5 @@
   flex-direction: column;
   min-height: 100vh;
   font-family: "Inter", Arial, sans-serif;
-  padding: 0 20px;
+  width: 100%;
 }
