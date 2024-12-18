@@ -26,3 +26,17 @@ const initialCards = [
 ];
 
 console.log(initialCards);
+
+const profileEditButton = document.querySelector("#profile-edit-button");
+const profileEditModel = document.querySelector("#profile-edit-model");
+const modelCloseButton = document.querySelector("#model-close-button");
+
+profileEditButton.addEventListener("click", () => {
+  profileEditModel.classList.add("model__opened");
+  console.log("Modal opened");
+});
+
+modelCloseButton.addEventListener("click", () => {
+  profileEditModel.classList.remove("model__opened");
+  console.log("Modal closed");
+});
