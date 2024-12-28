@@ -1,4 +1,4 @@
-.model {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,11 +10,11 @@
   padding: 0 19px;
 }
 
-.model__opened {
+.modal_opened {
   display: flex;
 }
 
-.model__container {
+.modal__container {
   position: relative;
   padding: 36px 20px;
   background-color: #fff;
@@ -24,9 +24,11 @@
   box-sizing: border-box;
   width: 430px;
   height: 330px;
+  margin-top: 195px;
+  margin-bottom: 195px;
 }
 
-.model__close {
+.modal__close {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -40,7 +42,7 @@
   background-size: contain;
 }
 
-.model__heading {
+.modal__heading {
   color: #000;
   font-size: 24px;
   font-weight: 900;
@@ -49,13 +51,13 @@
   text-align: left;
 }
 
-.model__form {
+.modal__form {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.model__form input {
+.modal__form input {
   width: 100%;
   height: 40px;
   padding: 10px;
@@ -66,35 +68,37 @@
   box-sizing: border-box;
 }
 
-.model__save-button {
+.modal__save-button {
   width: 100%;
   height: 50px;
   background-color: black;
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 37px;
 }
 
-@media screen and (max-width: 660px) {
-  .model__container {
+@media screen and (max-width: 390px) {
+  .modal__container {
     width: 282px;
     height: 322px;
     padding: 20px;
+    margin: 123px 19px; /* Верх и низ - 123px, по бокам - 19px */
   }
 
-  .model__heading {
+  .modal__heading {
     margin-bottom: 35px;
+    font-size: 18px;
   }
 
-  .model__save-button {
+  .modal__save-button {
     margin-top: 25px;
+    font-size: 14px;
   }
 
-  .model__form input {
+  .modal__form input {
     font-size: 14px;
   }
 }
