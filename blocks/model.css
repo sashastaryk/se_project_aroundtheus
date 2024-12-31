@@ -80,6 +80,28 @@
   margin-top: 37px;
 }
 
+@media screen and (max-width: 480px) {
+  .modal__container {
+    width: 90%; /* Вместо фиксированной ширины */
+    height: auto; /* Для динамической высоты */
+    padding: 20px;
+    margin: 100px auto; /* Центровка по вертикали */
+  }
+
+  .modal__heading {
+    font-size: 18px;
+  }
+
+  .modal__save-button {
+    font-size: 14px;
+    height: 45px;
+  }
+
+  .modal__form input {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .modal__container {
     width: 282px;
