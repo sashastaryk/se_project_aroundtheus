@@ -82,10 +82,9 @@
 
 @media screen and (max-width: 480px) {
   .modal__container {
-    width: 90%; /* Вместо фиксированной ширины */
-    height: auto; /* Для динамической высоты */
+    width: 90%;
     padding: 20px;
-    margin: 100px auto; /* Центровка по вертикали */
+    margin: 123px auto;
   }
 
   .modal__heading {
@@ -107,12 +106,13 @@
     width: 282px;
     height: 322px;
     padding: 20px;
-    margin: 123px 19px; /* Верх и низ - 123px, по бокам - 19px */
+    margin: 123px 19px;
   }
 
   .modal__heading {
     margin-bottom: 35px;
     font-size: 18px;
+    line-height: 22px;
   }
 
   .modal__save-button {
@@ -120,7 +120,19 @@
     font-size: 14px;
   }
 
+  .modal__close {
+    width: 26px;
+    height: 26px;
+  }
+
   .modal__form input {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal__container {
+    margin: 195px auto;
+    width: 425px;
   }
 }
