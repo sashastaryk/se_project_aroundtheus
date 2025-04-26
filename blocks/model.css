@@ -20,12 +20,8 @@
   background-color: #fff;
   margin: auto;
   border-radius: 10px;
-  max-width: 100%;
   box-sizing: border-box;
-  width: 425px;
-  height: 330px;
-  margin-top: 195px;
-  margin-bottom: 195px;
+  width: 430px;
 }
 
 .modal__close {
@@ -35,26 +31,26 @@
   position: absolute;
   top: -40px;
   right: -40px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background-image: url("../images/Close\ Icon.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .modal__heading {
   color: #000;
   font-size: 24px;
   font-weight: 900;
-  margin: 0;
-  margin-bottom: 54px;
+  margin: 0 0 54px;
   text-align: left;
 }
 
 .modal__form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: center;
+  gap: 36px; /* расстояние между полями и кнопкой Save */
 }
 
 .modal__form input {
@@ -75,76 +71,73 @@
   color: #fff;
   font-size: 22px;
   border: none;
+  border-radius: 2px;
   cursor: pointer;
-  border-radius: 5px;
-  margin-top: 37px;
+}
+
+.modal__save-button:hover {
+  background-color: #333;
 }
 
 @media screen and (max-width: 480px) {
   .modal__container {
-    width: 90%;
-    padding: 20px;
-    margin: 123px auto;
-  }
-
-  .modal__heading {
-    font-size: 18px;
-    margin-bottom: 75px;
-  }
-
-  .modal__save-button {
-    font-size: 14px;
-    height: 46px;
-    width: 238px;
-  }
-
-  .modal__form input {
-    width: 238px;
-    font-size: 14px;
-  }
-
-  .modal__close {
-    width: 26px;
-    height: 26px;
-    top: -26px;
-    right: -26px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .modal__container {
     width: 282px;
     height: 322px;
+    margin: 123px auto 0 auto;
     padding: 20px;
-    margin: 123px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* <-- добавляем */
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fff;
   }
 
   .modal__heading {
-    margin-bottom: 75px;
     font-size: 18px;
-    line-height: 22px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin-top: 20px;
+  }
+
+  .modal__form input {
+    width: 238px;
+    height: 27px;
+    font-size: 14px;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    background-color: transparent;
+    box-sizing: border-box;
   }
 
   .modal__save-button {
-    font-size: 14px;
-    height: 46px;
     width: 238px;
+    height: 46px;
+    font-size: 14px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: auto; /* чтобы кнопка уходила вниз */
   }
 
   .modal__close {
     width: 26px;
     height: 26px;
-  }
-
-  .modal__form input {
-    width: 238px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .modal__container {
-    margin: 195px auto;
-    width: 425px;
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
